@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Mall Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: url('https://img.freepik.com/free-photo/blurred-background-store-shopping-mall-blur-background-with-bokeh-vintage-filtered-image_1253-1414.jpg') no-repeat center center fixed;
+            background-size: cover;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: url('https://img1.wsimg.com/templates-vnext/shoppingcenters-example-9-thumb.jpg') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .shops, .events {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .shop-item, .event-item {
+            flex: 0 1 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        }
+
+        .shop-item img, .event-item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .confirmation-message {
+            text-align: center;
+            margin-top: 20px;
+            color: green;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for footer */
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .shop-item, .event-item {
+                flex: 0 1 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .shop-item, .event-item {
+                flex: 0 1 100%;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Shopping Mall</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h3>Discover Amazing Experiences</h3>
+    </section>
+
+    <section id="about">        
+        <h2 class="section-title">About Your Mall</h2>
+        <b><p>Your shopping mall offers an unparalleled shopping and entertainment experience. From luxury boutiques to popular retail stores, we cater to all your shopping needs. Enjoy a variety of dining options, from casual eateries to fine dining restaurants. Our mall also features a state-of-the-art cinema, a kids' play area, and regular events and promotions to enhance your visit. Whether you're here for a day out with family or a quick shopping spree, we strive to make your experience enjoyable and memorable.</p></b>
+    </section>
+
+    <section id="shops">
+        <h2 class="section-title">Our Shops</h2>
+        <div class="shops">
+            <div class="shop-item">
+                <img src="https://th.bing.com/th/id/OIP.miVJxAagwnJZGOLq_kBE-QAAAA?rs=1&pid=ImgDetMain" alt="Fashion Store">
+                <h3>Fashion Store</h3>
+                <p>Find the latest trends in fashion.</p>
+            </div>
+            <div class="shop-item">
+                <img src="https://thumbs.dreamstime.com/b/saint-petersburg-russia-circa-may-goods-display-sony-store-galeria-shopping-center-electronics-store-134641471.jpg">
+                <h3>Electronics</h3>
+                <p>Get the latest gadgets and accessories.</p>
+            </div>
+            <div class="shop-item">
+                <img src="https://homyhomee.com/wp-content/uploads/2020/02/Inspiring-Living-Room-Furniture-Ideas-Look-Beautiful-18.jpg" alt="Home Decor Store">
+                <h3>Home Decor</h3>
+                <p>Beautiful and unique home furnishings.</p>
+            </div>
+            <!-- Add more shops as needed -->
+        </div>
+    </section>
+
+    <section id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="events">
+            <div class="event-item">
+                <img src="https://images.squarespace-cdn.com/content/v1/58092374f5e231054f7d4981/1705542806620-I7Q52QQ8PXQEB0LTYDX3/Poster-Live-Friday.jpg" alt="Live Music">
+                <h3>Live Music</h3>
+                <p>Join us for live music every Friday evening.</p>
+            </div>
+            <div class="event-item">
+                <img src="https://thumbs.dreamstime.com/z/game-center-entertainment-playground-shopping-center-various-arcade-games-inside-shopping-mall-game-center-children-s-play-215293789.jpg" alt="New Gaming Zone Opening">
+                <h3>New Gaming Zone Opening</h3>
+                <p>Join us on 20, July 2024 for the grand opening of our new gaming zone! Enjoy a variety of exciting games and activities, with special offers and discounts available on the opening day.</p>
+            </div>
+            <div class="event-item">
+                <img src="https://www.lasvegas-entertainment-guide.com/image-files/catwalk-show-at-fashion-show-mall-las-vegas.jpg" alt="Fashion Show Extravaganza">
+                <h3>Fashion Show Extravaganza</h3>
+                <p>Join us for a one-day Fashion Show Extravaganza on June 12, 2024! Experience the latest trends on the runway and discover the hottest styles from our mall's clothing stores.</p>
+            </div>
+            <!-- Add more events as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+                Thank you for your message! We will get back to you soon.
+            </div>
+        </div>
+   </section>
+
+    <footer>
+        <p>&copy; 2024 Your Shopping Mall. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            document.getElementById('confirmationMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

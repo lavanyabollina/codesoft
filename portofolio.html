@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bollina Lavanya | Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #333;
+      --accent-color: #007BFF;
+      --bg-color: #faf0e6;
+      --light-color: #fff5ee;
+      --text-color: #333;
+      --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.5rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      background: var(--light-color);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      padding: 2rem 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    #about .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      text-align: left;
+    }
+
+    #about img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .skills-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .skills-container img {
+      height: 100px;
+      width: 100px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: white;
+      padding: 0.5rem;
+    }
+
+    .project-images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .project-images img {
+      width: calc(50% - 1rem);
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .project-description {
+      margin-top: 1rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .achievement-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .achievement-item, .achievement-item-full {
+      text-align: center;
+      flex: 1 1 calc(50% - 1rem);
+    }
+
+    .achievement-item-full {
+      flex: 1 1 100%;
+    }
+
+    .achievement-item img, .achievement-item-full img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    #resume a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: var(--primary-color);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    #contact p {
+      margin: 0.5rem 0;
+      text-align: center;
+    }
+
+    footer {
+      background: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    #scrollTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 20px;
+      z-index: 99;
+      font-size: 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      outline: none;
+      padding: 10px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      transition: background 0.3s;
+    }
+
+    #scrollTopBtn:hover {
+      background-color: #007BFF;
+    }
+
+    @media (max-width: 768px) {
+      .project-images img,
+      .achievement-item, .achievement-item-full {
+        width: 100%;
+      }
+
+      .skills-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Bollina Lavanya</h2>
+    <p>Frontend Developer | CSE Final Year</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="content">
+        <img src="https://static.vecteezy.com/system/resources/previews/025/474/309/non_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg" alt="Bollina Lavanya">
+        <div class="bio">
+          <p>I am a passionate frontend developer and final-year CSE student with experience in HTML, CSS, JavaScript, and Python. I recently interned at Codesoft as a web developer, where I worked on real-world projects and built responsive, user-friendly applications. I enjoy creating visually appealing designs and constantly strive to learn and grow in the tech world.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <img src="https://th.bing.com/th?q=HTML+Language+Logo&w=120&h=120&c=1&rs=1&qlt=70&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=en-IN&cc=IN&setlang=en&adlt=strict&t=1&mw=247" alt="HTML">
+        <img src="https://th.bing.com/th/id/OIP.ZxRf0CJmczpQaj_A7q4sngHaDK?w=297&h=149&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="CSS">
+        <img src="https://th.bing.com/th/id/OIP.Ys1K6_JFhdorvjyqs2BA2wHaIB?rs=1&pid=ImgDetMain" alt="JavaScript">
+        <img src="https://th.bing.com/th/id/OIP.KnOS3vOcNhLla8LSZw4TugHaHa?w=177&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Python">
+        <img src="https://th.bing.com/th/id/OIP.moPPYhZm4i7EJH6DTyBwUAHaEH?w=281&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="SQL">
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Organ Donation Management System</h3>
+      <div class="project-images">
+        <img src="frontend.png" alt="Frontend">
+        <img src="admin.png" alt="Admin">
+        <img src="patientpage.png" alt="Patients">
+        <img src="donarpage.png" alt="Donors">
+      </div>
+      <div class="project-description">
+        <p>This web application was built using HTML and CSS and includes three modules: Admin, Donor, and Patient. Users can register via patient or donor forms, and only the admin has access to view, approve, and manage the registrations. The system streamlines the organ donation process by providing clear interfaces for all user types.</p>
+      </div>
+    </section>
+
+    <section id="achievements">
+  <h2>Achievements</h2>
+  <ul style="list-style-type: disc; padding-left: 2rem; font-size: 1.1rem;">
+    <li>Python Programming Essentials - Cisco</li>
+    <li>Programming in C - Cisco</li>
+    <li>Programming in Java - NPTEL (12-week course, 65%)</li>
+    <li>Web Development Internship - Codesoft</li>
+  </ul>
+</section>
+
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <center>
+        <p>Click the button below to view or download my resume:</p>
+        <a href="resume.pdf" download>Download Resume</a>
+      </center>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lavanyabollina12@gmail.com">lavanyabollina12@gmail.com</a></p>
+      <p>Phone: 63046*****</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lavanya-bollina-b670592b2/" target="_blank">lavanya-bollina</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Bollina Lavanya. All rights reserved.</p>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button id="scrollTopBtn" title="Go to top">⬆</button>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Scroll to top button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      scrollBtn.style.display = (document.documentElement.scrollTop > 200) ? "block" : "none";
+    };
+    scrollBtn.onclick = function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+  </script>
+
+</body>
+</html>
